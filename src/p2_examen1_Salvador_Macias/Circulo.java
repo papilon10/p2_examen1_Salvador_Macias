@@ -6,23 +6,25 @@ package p2_examen1_Salvador_Macias;
 
 /**
  *
- * @author claudiacortes
+ * @author Apple
  */
-class Cuadrado {
+public class Circulo extends Figura {
 
-    private double lado;
+    private double radio;
 
-    public Cuadrado(double lado) {
-        this.lado = lado;
+    public Circulo(double radio) {
+        this.radio = radio;
     }
 
     //@override
     double calcularArea() {
-        return lado * lado;
+        double radio_cuadrado = radio * radio;
+        return radio_cuadrado * 3.1416;
     }
 
     @Override
     public String toString() {
-        return "(L=" + lado + ")";
+        return "(R=" + radio + ")";
     }
+
 }
