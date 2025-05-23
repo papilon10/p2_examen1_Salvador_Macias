@@ -10,6 +10,31 @@ import java.util.ArrayList;
  *
  * @author claudiacortes
  */
-class FiguraCompuesta implements Figura {
+class FiguraCompuesta extends Figura {
+
     private ArrayList<Figura> figuras = new ArrayList<>();
+
+    double calcularArea() {
+        for (int i = 0; i < figuras.size(); i++) {
+            double suma;
+            figuras.get(i).calcularArea();
+            suma = +figuras.get(i).calcularArea();
+            return suma;
+        }
+        return 0;
+    }
+
+    public void listar_f() {
+        for (Figura figura : figuras) {
+            if (figura instanceof FiguraCompuesta) {
+                System.out.println("figura compuesta:\n" + figura);
+            }
+
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "figuras compuesta: " + figuras;
+    }
 }

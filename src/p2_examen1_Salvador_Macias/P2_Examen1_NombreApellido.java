@@ -71,7 +71,7 @@ public class P2_Examen1_NombreApellido {
                 listarFiguras();
             case 4 -> {
                 System.out.println("A esta caracteristica se llama sobrecarga de metodos, la sobrecarga de metodos permite "
-                        + "\nque existan metodos con el mismo nombre pero con diferentes parametros.");
+                        + "\nque existan metodos con el mismo nombre pero con diferentes parametros.\n\n");
             }
             case 5 -> {
                 System.out.println("\nSaliendo del programa....");
@@ -82,8 +82,8 @@ public class P2_Examen1_NombreApellido {
             }
         }
         return true;
-        
-         /*
+
+        /*
         ¿Cuál es la diferencia entre polimorfismo por sobreescritura, interfaces y clases abstractas?
         
          La diferencia entre estos 3 terminos es que el polimorfismo por sobreescritura utiliza las clases hijas de la clase abstacta principal
@@ -158,7 +158,7 @@ public class P2_Examen1_NombreApellido {
             int pos = leerEntrada("\nIngrese el tipo de figura que desea crear:", figuras.size() - 1);
             int opSubMenu = leerEntrada("\nDesea continuar agregando figuras? 1.si, 2.No", 2);
 
-            figura.agregarFigura(figuras.get(pos));
+            figuras.add(figuras.get(pos));
             if (opSubMenu == 2) {
                 break;
             }

@@ -8,7 +8,7 @@ package p2_examen1_Salvador_Macias;
  *
  * @author claudiacortes
  */
-class Cuadrado {
+class Cuadrado extends Figura{
 
     private double lado;
 
